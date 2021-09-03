@@ -3,9 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <title>Weather Dashboard</title>
     </head>
     <body>
-        
+
+        <header class="container-fluid text-center bg-dark text-primary p-4">
+            <h1>Weather Dashboard</h1>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="col-lg-2 bg-dark mt-4">
+                    <h4 class="pt-2 text-primary">Search a Location:</h4>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Location" id="Location" />
+                        <button type="button" class="btn btn-primary" id="location-button"><i class="bi bi-search"></i></button>
+                        </div>
+
+                        <ul class="list-group history"></ul>
+                    </aside>
+
+                    <div class="col-lg-7">
+                        <div class="pt-4" id="present-weather">
+                            <div class="row pt-4" id="outlook">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <script src="assets/js/script.js"></script>
     </body>
 </html>
